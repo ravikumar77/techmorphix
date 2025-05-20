@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Services Carousel
+    initServicesCarousel();
+    
     // Testimonial slider functionality
     const testimonialSlides = document.querySelectorAll('.testimonial-slide');
     const dots = document.querySelectorAll('.testimonial-dots .dot');

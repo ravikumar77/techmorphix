@@ -80,6 +80,8 @@
                     <p>Complete the form below to get in touch with our team. We'll respond to your inquiry as soon as possible, typically within 24 business hours.</p>
                 </div>
                 <form id="contact-form" class="contact-form">
+                    <div id="form-status" class="form-status"></div>
+                    
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name*</label>
@@ -125,7 +127,12 @@
                         <label for="consent">I consent to Techmorphix Solutions processing my data for the purpose of responding to my inquiry. I have read and accept the <a href="#">Privacy Policy</a>.*</label>
                     </div>
                     <div class="form-submit">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <span id="submit-text">Send Message</span>
+                            <span id="submit-spinner" class="spinner">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -292,6 +299,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
