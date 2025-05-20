@@ -824,6 +824,223 @@ nav ul li.active a {
     margin-top: 5px;
 }
 
+/* Careers Page Styles */
+.careers-intro {
+    padding: 80px 0;
+}
+
+.careers-culture {
+    padding: 80px 0;
+}
+
+.culture-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+}
+
+.culture-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.culture-text h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.culture-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.culture-feature {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.culture-feature:hover {
+    transform: translateY(-10px);
+}
+
+.culture-feature i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.culture-feature h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.culture-image {
+    flex: 0 0 400px;
+    height: 400px;
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.culture-image-placeholder {
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Job Listings Styles */
+.job-openings {
+    padding: 80px 0;
+}
+
+.job-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: var(--background-light);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.jobs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.job-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.job-header h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-right: 15px;
+}
+
+.job-type {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.full-time {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success-color);
+}
+
+.part-time {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: var(--warning-color);
+}
+
+.contract {
+    background-color: rgba(23, 162, 184, 0.1);
+    color: var(--info-color);
+}
+
+.job-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.job-location, .job-department {
+    display: flex;
+    align-items: center;
+}
+
+.job-details i {
+    margin-right: 8px;
+}
+
+.job-description {
+    margin-bottom: 20px;
+}
+
+.job-requirements {
+    margin-bottom: 25px;
+}
+
+.job-requirements h4 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.job-requirements ul {
+    padding-left: 20px;
+}
+
+.job-requirements li {
+    margin-bottom: 8px;
+}
+
+.apply-btn {
+    margin-right: 15px;
+}
+
+.job-details-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.job-details-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Employee Testimonials */
+.employee-testimonials {
+    padding: 80px 0;
+}
+
 .service-card {
     background: #fff;
     padding: 30px;
