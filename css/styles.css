@@ -5,12 +5,15 @@
 
 /* Base styles and resets */
 :root {
-    --primary-color: #0055a4;
-    --primary-light: #3378b5;
-    --primary-dark: #003c7a;
-    --secondary-color: #ff6b00;
-    --secondary-light: #ff8b33;
-    --secondary-dark: #cc5500;
+    --primary-color: #3498db;
+    --primary-light: #5dade2;
+    --primary-dark: #2980b9;
+    --secondary-color: #9b59b6;
+    --secondary-light: #ad7cc8;
+    --secondary-dark: #8e44ad;
+    --accent-color: #2ecc71;
+    --accent-light: #55d98d;
+    --accent-dark: #27ae60;
     --text-color: #333333;
     --text-light: #666666;
     --text-white: #ffffff;
@@ -25,6 +28,12 @@
     --danger-color: #dc3545;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --transition-speed: 0.3s;
+    
+    /* Responsive breakpoints */
+    --mobile: 576px;
+    --tablet: 768px;
+    --desktop: 992px;
+    --large-desktop: 1200px;
 }
 
 * {
@@ -78,6 +87,12 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px; /* Larger container for bigger screens */
+    }
 }
 
 .section-title {
@@ -172,18 +187,20 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: all 0.3s ease;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    z-index: 1001; /* Keep logo above mobile menu */
 }
 
 .logo a {
@@ -198,6 +215,26 @@ header .container {
 
 .logo a:hover .logo-image {
     transform: scale(1.05);
+}
+
+@media (min-width: 1400px) {
+    .logo-image {
+        height: 60px; /* Larger logo for big screens */
+    }
+    
+    header .container {
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        padding: 12px 15px;
+    }
+    
+    .logo-image {
+        height: 45px; /* Slightly smaller logo for mobile */
+    }
 }
 
 nav ul {

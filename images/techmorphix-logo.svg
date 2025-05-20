@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
-  <!-- Logo Background Shape -->
+  <!-- Logo background shape -->
   <defs>
     <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0055a4"/>
-      <stop offset="100%" stop-color="#003c7a"/>
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="50%" stop-color="#9b59b6" />
+      <stop offset="100%" stop-color="#2ecc71" />
     </linearGradient>
   </defs>
+
+  <!-- Hexagonal tech shape with gradient -->
+  <path d="M45,10 L60,20 L60,40 L45,50 L30,40 L30,20 Z" fill="url(#logoGradient)" />
   
-  <!-- Tech icon elements -->
-  <g transform="translate(10, 10)">
-    <circle cx="20" cy="20" r="15" fill="url(#logoGradient)" />
-    <circle cx="20" cy="20" r="7" fill="none" stroke="#ffffff" stroke-width="2" />
-    <line x1="20" y1="5" x2="20" y2="13" stroke="#ffffff" stroke-width="2" />
-    <line x1="20" y1="27" x2="20" y2="35" stroke="#ffffff" stroke-width="2" />
-    <line x1="5" y1="20" x2="13" y2="20" stroke="#ffffff" stroke-width="2" />
-    <line x1="27" y1="20" x2="35" y2="20" stroke="#ffffff" stroke-width="2" />
-  </g>
+  <!-- Tech circuit paths -->
+  <path d="M36,25 L40,25 L42,30 L45,27 L48,30 L50,25 L54,25" stroke="white" stroke-width="1.5" fill="none" />
+  <path d="M42,35 L45,32 L48,35" stroke="white" stroke-width="1.5" fill="none" />
+  <circle cx="36" cy="25" r="2" fill="white" />
+  <circle cx="54" cy="25" r="2" fill="white" />
+  <circle cx="42" cy="35" r="2" fill="white" />
+  <circle cx="48" cy="35" r="2" fill="white" />
   
-  <!-- Company Name -->
-  <text x="55" y="30" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="700" fill="#0055a4">TECHMORPHIX</text>
-  <text x="55" y="48" font-family="'Segoe UI', sans-serif" font-size="14" fill="#666666">SOLUTIONS</text>
+  <!-- Morph effect - small shapes floating around -->
+  <circle cx="27" cy="30" r="1.5" fill="#3498db" />
+  <circle cx="63" cy="30" r="1.5" fill="#2ecc71" />
+  <circle cx="45" cy="54" r="1.5" fill="#9b59b6" />
+  <circle cx="45" cy="6" r="1.5" fill="#3498db" />
   
-  <!-- Digital connection lines -->
-  <path d="M40 40 L50 45 L60 42" stroke="#ff6b00" stroke-width="1.5" fill="none" />
-  <path d="M40 40 L45 50 L55 52" stroke="#ff6b00" stroke-width="1.5" fill="none" />
+  <!-- Company name - Techmorphix -->
+  <text x="75" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+    Techmorphix
+  </text>
+  
+  <!-- Solutions text -->
+  <text x="75" y="47" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    SOLUTIONS
+  </text>
 </svg>
