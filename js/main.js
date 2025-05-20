@@ -192,12 +192,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Services Carousel function
     function initServicesCarousel() {
-        const carouselTrack = document.querySelector('.carousel-track');
-        const slides = document.querySelectorAll('.carousel-slide');
-        const dotsContainer = document.querySelector('.carousel-dots');
-        const dots = document.querySelectorAll('.carousel-dots .dot');
-        const prevButton = document.querySelector('.prev-btn');
-        const nextButton = document.querySelector('.next-btn');
+        // Initialize all carousels
+        initCarousel('.carousel-track', '.carousel-slide', '.carousel-dots .dot', '.prev-btn', '.next-btn');
+        initCarousel('.dev-carousel .carousel-track', '.dev-carousel .carousel-slide', '.dev-carousel .carousel-dots .dot', '.dev-carousel .prev-btn', '.dev-carousel .next-btn');
+        
+        // Initialize Hero Carousel if it exists
+        initHeroCarousel();
+    }
+    
+    function initCarousel(trackSelector, slideSelector, dotSelector, prevSelector, nextSelector) {
+        const carouselTrack = document.querySelector(trackSelector);
+        const slides = document.querySelectorAll(slideSelector);
+        const dots = document.querySelectorAll(dotSelector);
+        const prevButton = document.querySelector(prevSelector);
+        const nextButton = document.querySelector(nextSelector);
         
         if (!carouselTrack || slides.length === 0) {
             return; // Exit if carousel elements don't exist
@@ -271,5 +279,52 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         }
+    }
+    
+    // Hero Carousel functionality
+    function initHeroCarousel() {
+        const heroTrack = document.querySelector('.hero-carousel-track');
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        const heroIndicators = document.querySelectorAll('.hero-indicator');
+        
+        if (!heroTrack || heroSlides.length === 0) {
+            return; // Exit if elements don't exist
+        }
+        
+        let currentHeroSlide = 0;
+        const totalSlides = heroSlides.length;
+        
+        // Set up auto-rotation
+        let heroInterval = setInterval(rotateHeroSlides, 4000);
+        
+        // Add click events to indicators
+        if (heroIndicators.length > 0) {
+            heroIndicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', function() {
+                    currentHeroSlide = index;
+                    updateHeroCarousel();
+                });
+            });
+        }
+        
+        // Auto-rotate function
+        function rotateHeroSlides() {
+            currentHeroSlide = (currentHeroSlide + 1) % totalSlides;
+            updateHeroCarousel();
+        }
+        
+        // Update hero carousel position and active indicators
+        function updateHeroCarousel() {
+            // Update slides 
+            heroTrack.style.transform = `translateX(-${currentHeroSlide * (100 / totalSlides)}%)`;
+            
+            // Update active indicator
+            heroIndicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentHeroSlide);
+            });
+        }
+        
+        // Initialize with the first slide active
+        updateHeroCarousel();
     }
 });
