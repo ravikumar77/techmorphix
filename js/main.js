@@ -189,4 +189,87 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('sticky');
         }
     });
+    
+    // Services Carousel function
+    function initServicesCarousel() {
+        const carouselTrack = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dotsContainer = document.querySelector('.carousel-dots');
+        const dots = document.querySelectorAll('.carousel-dots .dot');
+        const prevButton = document.querySelector('.prev-btn');
+        const nextButton = document.querySelector('.next-btn');
+        
+        if (!carouselTrack || slides.length === 0) {
+            return; // Exit if carousel elements don't exist
+        }
+        
+        let currentSlide = 0;
+        const slideWidth = 100; // 100% width
+        
+        // Set initial position
+        updateCarousel();
+        
+        // Add event listeners for navigation
+        if (prevButton) {
+            prevButton.addEventListener('click', function() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                updateCarousel();
+            });
+        }
+        
+        if (nextButton) {
+            nextButton.addEventListener('click', function() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateCarousel();
+            });
+        }
+        
+        // Add event listeners for dots
+        if (dots.length > 0) {
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    currentSlide = index;
+                    updateCarousel();
+                });
+            });
+        }
+        
+        // Set up auto-rotation
+        let carouselInterval = setInterval(autoRotate, 6000);
+        
+        // Pause rotation on hover
+        const carousel = document.querySelector('.services-carousel');
+        if (carousel) {
+            carousel.addEventListener('mouseenter', function() {
+                clearInterval(carouselInterval);
+            });
+            
+            carousel.addEventListener('mouseleave', function() {
+                carouselInterval = setInterval(autoRotate, 6000);
+            });
+        }
+        
+        // Auto-rotate function
+        function autoRotate() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateCarousel();
+        }
+        
+        // Update carousel position and active indicators
+        function updateCarousel() {
+            // Move slide track
+            carouselTrack.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+            
+            // Update active dot
+            if (dots.length > 0) {
+                dots.forEach((dot, index) => {
+                    if (index === currentSlide) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+        }
+    }
 });
