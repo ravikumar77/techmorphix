@@ -181,11 +181,23 @@ header .container {
     padding: 20px;
 }
 
-.logo h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 0;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo a:hover .logo-image {
+    transform: scale(1.05);
 }
 
 nav ul {
@@ -720,19 +732,65 @@ footer {
     margin-right: 10px;
 }
 
+.service-highlight-box {
+    background-color: rgba(0, 85, 164, 0.05);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.highlight-icon {
+    flex-shrink: 0;
+}
+
+.highlight-icon i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.highlight-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+.service-text h2 i, .service-text h3 i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 .tech-stack span {
     background-color: var(--background-light);
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tech-stack span:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary-light);
+    color: white;
+}
+
+.tech-stack span i {
+    margin-right: 8px;
+    font-size: 1.1rem;
 }
 
 .process {
