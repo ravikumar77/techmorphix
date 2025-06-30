@@ -770,7 +770,7 @@ body {
 /* Hero Title Styling */
 /* Hero Title Styling */
 .hero-title {
-    max-width: 90%;
+   /* max-width: 90%;*/
     /* Increase this value to increase width */
     margin: 0 auto;
     /* Center align the title */
