@@ -1,0 +1,110 @@
+You are a professional full-stack web developer experienced in creating modern, responsive, and SEO-optimized websites for IT companies.
+
+Task:  
+Design and build a complete responsive website for an IT company called **Techmorphix Solutions**.  
+
+Company Overview:  
+Techmorphix Solutions is an IT consulting and technology services company offering solutions like Cybersecurity, Cloud Infrastructure, Application Development, and IT Support. The company is known for its 15+ years of experience, 150+ professionals, and proven client success stories across industries like finance, healthcare, and manufacturing.
+
+---
+
+🎨 **Design Style**  
+- Clean, corporate, and tech-oriented  
+- Minimalist layouts with white space  
+- Vibrant but professional color palette (suggest blue, grey, and white tones)  
+- Use modern web design standards: Responsive (mobile-first), WCAG accessibility  
+- Full-width hero images or video background on the homepage  
+
+---
+
+📄 **Website Pages & Structure**
+
+1. **Home Page**  
+- Hero section: "We Solve Complex IT Challenges for Global Businesses"  
+- Quick navigation to core services  
+- Company highlights:  
+   - 15+ years in business  
+   - 150+ IT professionals  
+   - 500+ successful projects  
+- One featured case study preview  
+- Client testimonial carousel  
+- Call to Action: "Get a Free Consultation"
+
+2. **About Us**  
+- Company history and mission  
+- Core values and vision statement  
+- Leadership team bios  
+- Certifications and partnerships (ITIL, ISO, AWS, Microsoft)
+
+3. **Services Overview Page**  
+- Summary of all services with links to detailed subpages  
+
+**Subpages (One for Each Service):**  
+   a. Cybersecurity  
+   b. Cloud & Infrastructure  
+   c. Application Engineering  
+   d. IT Consulting & Support  
+
+For each service page:  
+- Problem → Solution → Benefits section  
+- Key deliverables and process overview  
+- Related case study link  
+- CTA: "Get a Custom Quote"
+
+4. **Case Studies Page**  
+- Client Challenge → Techmorphix Solution → Measurable Results  
+- Industry filters (Finance, Healthcare, Manufacturing)
+
+5. **Testimonials**  
+- Real customer quotes with names and company logos
+
+6. **Blog / Insights**  
+- Tech articles on IT trends, cybersecurity, cloud best practices  
+- SEO-optimized URLs for each post  
+
+7. **Resources**  
+- Downloadable whitepapers, webinars, eBooks, checklists  
+- Example: "Cloud Migration Readiness Checklist"
+
+8. **Contact Us**  
+- Simple contact form (Name, Email, Message)  
+- Phone, Email, Office Location  
+- Embed Google Map  
+- Optional: Chatbot or live chat widget
+
+---
+
+🔧 **Technical Requirements**  
+- Use HTML5, CSS3, JavaScript (vanilla or lightweight framework)  
+- Bootstrap 5 or Tailwind CSS for responsive design  
+- Include SEO meta tags (title, description, OG tags) for all pages  
+- Optimize for fast loading (image compression, minified CSS/JS)  
+- Integrate Google Analytics snippet  
+- Use semantic HTML with ARIA labels for accessibility  
+- Fully mobile-friendly (breakpoints for desktop, tablet, mobile)  
+- Create XML sitemap and robots.txt  
+- URL structure should be clean and SEO-friendly  
+   - Example: `/services/cloud-infrastructure`
+
+---
+
+📝 **Content Writing Guidelines**  
+- Tone: Professional, authoritative, yet approachable  
+- Write engaging headers (H1, H2) and clear CTAs  
+- Use SEO keywords related to IT services (like "IT consulting", "cloud infrastructure", "cybersecurity solutions")  
+- Limit jargon, focus on client benefits and outcomes  
+- Highlight metrics and proof points  
+
+---
+
+✅ **Final Output Expected:**  
+- Full HTML/CSS/JS files per page  
+- Folder structure: `/index.html`, `/services/`, `/about/`, `/blog/`, `/contact/`, `/assets/`  
+- Dummy images or placeholders for now  
+- Internal linking between pages  
+- Ready-to-deploy static site
+
+---
+
+If possible, generate responsive CSS and provide alt-text for all images.
+

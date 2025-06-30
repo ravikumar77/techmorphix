@@ -1,406 +1,569 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Techmorphix Solutions</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>IT Services - Cybersecurity, Cloud, Development | Techmorphix Solutions</title>
+    <meta name="description" content="Comprehensive IT services including cybersecurity, cloud infrastructure, application development, and IT consulting. Expert solutions for modern businesses.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/techmorphix-logo.svg" alt="Techmorphix Solutions Logo" class="logo-image">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li ><a href="hire-us.html">Hire Developers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-code me-2"></i>Techmorphix Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">🚀 AI & Future Tech</h6></li>
+                            <li><a class="dropdown-item" href="services/ai-solutions.html">AI & Machine Learning</a></li>
+                            <li><a class="dropdown-item" href="services/automation.html">Automation & RPA</a></li>
+                            <li><a class="dropdown-item" href="services/data-analytics.html">Data Analytics</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">💻 Core Services</h6></li>
+                            <li><a class="dropdown-item" href="services/cybersecurity.html">Cybersecurity</a></li>
+                            <li><a class="dropdown-item" href="services/cloud-infrastructure.html">Cloud & Infrastructure</a></li>
+                            <li><a class="dropdown-item" href="services/application-engineering.html">Application Engineering</a></li>
+                            <li><a class="dropdown-item" href="services/mobile-development.html">Mobile Development</a></li>
+                            <li><a class="dropdown-item" href="services/it-consulting.html">IT Consulting & Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <section class="page-banner">
+    <!-- Page Header -->
+    <section class="page-header">
         <div class="container">
-            <h1>Our Services</h1>
-            <p>Comprehensive technology solutions designed to transform your business</p>
+            <div class="row">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Services</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 fw-bold mb-3">Our IT Services</h1>
+                    <p class="lead">Comprehensive technology solutions designed to transform your business</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="services-overview">
+    <!-- Services Overview -->
+    <section class="content-section">
         <div class="container">
-            <div class="section-intro">
-                <h2>How We Drive Your Digital Transformation</h2>
-                <p>At Techmorphix Solutions, we deliver end-to-end technology services that address your most complex business challenges. Our team of experienced professionals works closely with you to understand your unique needs and develop customized solutions that drive growth, efficiency, and innovation.</p>
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold mb-3">Complete IT Solutions</h2>
+                    <p class="lead">From cybersecurity to cloud infrastructure, we provide end-to-end technology services that drive business growth and operational excellence.</p>
+                </div>
             </div>
             
-            <div class="service-areas">
-                <div class="service-category">
-                    <div class="category-icon">
-                        <i class="fas fa-chart-line"></i>
+            <!-- AI & Machine Learning -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="service-feature">
+                        <i class="fas fa-brain fa-4x text-primary mb-4 ai-pulse"></i>
+                        <h3 class="fw-bold mb-3">AI & Machine Learning Solutions</h3>
+                        <p class="lead mb-3">Transform your business with intelligent automation, predictive analytics, and custom AI models.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-check text-success me-2"></i>Custom ML Model Development</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Natural Language Processing</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Computer Vision Solutions</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Predictive Analytics</li>
+                            <li><i class="fas fa-check text-success me-2"></i>AI-Powered Automation</li>
+                        </ul>
+                        <a href="services/ai-solutions.html" class="btn btn-primary btn-lg">Explore AI Solutions</a>
                     </div>
-                    <h3>Strategic Services</h3>
-                    <ul>
-                        <li><i class="fas fa-digital-tachograph"></i> Digital Transformation Consulting</li>
-                        <li><i class="fas fa-sitemap"></i> IT Strategy Development</li>
-                        <li><i class="fas fa-route"></i> Technology Roadmap Planning</li>
-                        <li><i class="fas fa-chart-pie"></i> Business Process Optimization</li>
-                    </ul>
                 </div>
-                <div class="service-category">
-                    <div class="category-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Implementation Services</h3>
-                    <ul>
-                        <li><i class="fas fa-laptop-code"></i> Custom Software Development</li>
-                        <li><i class="fas fa-cloud-upload-alt"></i> Cloud Migration & Management</li>
-                        <li><i class="fas fa-network-wired"></i> Enterprise System Integration</li>
-                        <li><i class="fas fa-mobile-alt"></i> Mobile Application Development</li>
-                    </ul>
-                </div>
-                <div class="service-category">
-                    <div class="category-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Security & Support</h3>
-                    <ul>
-                        <li><i class="fas fa-user-shield"></i> Cybersecurity Solutions</li>
-                        <li><i class="fas fa-cogs"></i> Managed IT Services</li>
-                        <li><i class="fas fa-headset"></i> 24/7 Technical Support</li>
-                        <li><i class="fas fa-database"></i> Disaster Recovery Planning</li>
-                    </ul>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="AI Solutions" class="img-fluid rounded-4 shadow ai-float">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="software" class="service-detail">
-        <div class="container">
-            <div class="service-content">
-                <div class="service-text">
-                    <h2><i class="fas fa-code-branch"></i> Custom Software Development</h2>
-                    <p>We create tailor-made software solutions that address your specific business requirements, streamline operations, and create competitive advantages.</p>
-                    <div class="service-highlight-box">
-                        <div class="highlight-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="highlight-text">
-                            <span>Accelerate your business growth with custom software solutions designed specifically for your unique challenges.</span>
-                        </div>
+            <!-- Cybersecurity -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-shield-alt fa-4x text-primary"></i>
                     </div>
-                    <h3><i class="fas fa-clipboard-list"></i> Our Custom Software Approach</h3>
-                    <p>We follow a collaborative, agile development process that ensures your software solution is developed efficiently and aligns perfectly with your business objectives.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-file-alt"></i> Requirements Analysis & Planning</li>
-                        <li><i class="fas fa-users"></i> User-Centered Design</li>
-                        <li><i class="fas fa-tasks"></i> Agile Development Methodologies</li>
-                        <li><i class="fas fa-vial"></i> Comprehensive Testing</li>
-                        <li><i class="fas fa-upload"></i> Deployment & Training</li>
-                        <li><i class="fas fa-tools"></i> Ongoing Support & Maintenance</li>
+                    <h3 class="h2 fw-bold mb-3">Cybersecurity Solutions</h3>
+                    <p class="lead mb-3">Protect your digital assets with comprehensive security frameworks</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>24/7 Security Monitoring</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Vulnerability Assessments</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Incident Response</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Compliance Management</li>
                     </ul>
-                    <h3><i class="fas fa-microchip"></i> Technologies We Utilize</h3>
-                    <div class="tech-stack">
-                        <span><i class="fab fa-java"></i> Java</span>
-                        <span><i class="fab fa-python"></i> Python</span>
-                        <span><i class="fab fa-microsoft"></i> .NET</span>
-                        <span><i class="fab fa-node-js"></i> Node.js</span>
-                        <span><i class="fab fa-react"></i> React</span>
-                        <span><i class="fab fa-angular"></i> Angular</span>
-                        <span><i class="fab fa-vuejs"></i> Vue.js</span>
-                        <span><i class="fas fa-database"></i> SQL/NoSQL</span>
-                    </div>
+                    <a href="services/cybersecurity.html" class="btn btn-primary me-3">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline-primary">Get Quote</a>
                 </div>
-                <div class="service-image">
-                    <i class="fas fa-laptop-code service-icon"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="cloud" class="service-detail alt-bg">
-        <div class="container">
-            <div class="service-content reverse">
-                <div class="service-image">
-                    <i class="fas fa-cloud service-icon"></i>
-                </div>
-                <div class="service-text">
-                    <h2><i class="fas fa-cloud"></i> Cloud Migration & Management</h2>
-                    <p>Transform your IT infrastructure with our comprehensive cloud services, designed to enhance scalability, reduce costs, and improve business agility.</p>
-                    <div class="service-highlight-box">
-                        <div class="highlight-icon">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <div class="highlight-text">
-                            <span>Boost your operational efficiency and reduce IT costs by up to 40% with our optimized cloud solutions.</span>
-                        </div>
-                    </div>
-                    <h3><i class="fas fa-list-alt"></i> Cloud Solutions We Provide</h3>
-                    <ul class="service-features">
-                        <li><i class="fas fa-search"></i> Cloud Readiness Assessment</li>
-                        <li><i class="fas fa-project-diagram"></i> Migration Strategy Development</li>
-                        <li><i class="fas fa-server"></i> Infrastructure as a Service (IaaS)</li>
-                        <li><i class="fas fa-layer-group"></i> Platform as a Service (PaaS)</li>
-                        <li><i class="fas fa-cubes"></i> Software as a Service (SaaS) Implementation</li>
-                        <li><i class="fas fa-random"></i> Hybrid Cloud Solutions</li>
-                        <li><i class="fas fa-lock"></i> Cloud Security & Compliance</li>
-                        <li><i class="fas fa-desktop"></i> 24/7 Cloud Monitoring & Management</li>
-                    </ul>
-                    <h3><i class="fas fa-briefcase"></i> Cloud Platforms We Work With</h3>
-                    <div class="tech-stack">
-                        <span><i class="fab fa-aws"></i> AWS</span>
-                        <span><i class="fab fa-microsoft"></i> Microsoft Azure</span>
-                        <span><i class="fab fa-google"></i> Google Cloud</span>
-                        <span><i class="fab fa-ibm"></i> IBM Cloud</span>
-                        <span><i class="fas fa-database"></i> Oracle Cloud</span>
+                <div class="col-lg-6">
+                    <div class="bg-light rounded-4 p-5 text-center">
+                        <i class="fas fa-lock fa-5x text-primary mb-3"></i>
+                        <h4>Advanced Threat Protection</h4>
+                        <p class="mb-0">Multi-layered security approach protecting against modern cyber threats</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="security" class="service-detail">
-        <div class="container">
-            <div class="service-content">
-                <div class="service-text">
-                    <h2><i class="fas fa-shield-alt"></i> Cybersecurity Services</h2>
-                    <p>Protect your organization's valuable data and systems with our comprehensive cybersecurity solutions, designed to identify vulnerabilities, mitigate risks, and respond to threats.</p>
-                    <div class="service-highlight-box">
-                        <div class="highlight-icon">
-                            <i class="fas fa-fingerprint"></i>
-                        </div>
-                        <div class="highlight-text">
-                            <span>Comprehensive protection against evolving cyber threats with our industry-leading security solutions.</span>
-                        </div>
+            <!-- Cloud Infrastructure -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-cloud fa-4x text-primary"></i>
                     </div>
-                    <h3><i class="fas fa-tasks"></i> Our Security Offerings</h3>
-                    <ul class="service-features">
-                        <li><i class="fas fa-clipboard-check"></i> Security Assessment & Auditing</li>
-                        <li><i class="fas fa-bug"></i> Vulnerability Management</li>
-                        <li><i class="fas fa-network-wired"></i> Network Security Solutions</li>
-                        <li><i class="fas fa-lock"></i> Data Protection & Encryption</li>
-                        <li><i class="fas fa-user-lock"></i> Identity & Access Management</li>
-                        <li><i class="fas fa-chart-line"></i> Security Information & Event Management (SIEM)</li>
-                        <li><i class="fas fa-file-medical-alt"></i> Incident Response Planning</li>
-                        <li><i class="fas fa-user-graduate"></i> Security Awareness Training</li>
+                    <h3 class="h2 fw-bold mb-3">Cloud & Infrastructure</h3>
+                    <p class="lead mb-3">Scalable cloud solutions that grow with your business</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Cloud Migration</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Infrastructure Design</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>DevOps Implementation</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Performance Optimization</li>
                     </ul>
-                    <h3><i class="fas fa-shield-virus"></i> Our Security Approach</h3>
-                    <p>We implement a multi-layered security strategy that addresses threats at every level of your technology infrastructure, from network perimeters to endpoint devices and user behavior.</p>
+                    <a href="services/cloud-infrastructure.html" class="btn btn-primary me-3">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline-primary">Get Quote</a>
                 </div>
-                <div class="service-image">
-                    <i class="fas fa-shield-alt service-icon"></i>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="bg-light rounded-4 p-5 text-center">
+                        <i class="fas fa-server fa-5x text-primary mb-3"></i>
+                        <h4>Scalable Infrastructure</h4>
+                        <p class="mb-0">Modern cloud architecture designed for performance and reliability</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="consulting" class="service-detail alt-bg">
-        <div class="container">
-            <div class="service-content reverse">
-                <div class="service-image">
-                    <i class="fas fa-handshake service-icon"></i>
-                </div>
-                <div class="service-text">
-                    <h2><i class="fas fa-handshake"></i> IT Consulting</h2>
-                    <p>Our strategic IT consulting services help you align technology investments with business objectives, optimize operations, and drive innovation across your organization.</p>
-                    <div class="service-highlight-box">
-                        <div class="highlight-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <div class="highlight-text">
-                            <span>Strategic guidance to maximize your technology investments and create sustainable competitive advantages.</span>
-                        </div>
+            <!-- Application Development -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-code fa-4x text-primary"></i>
                     </div>
-                    <h3><i class="fas fa-briefcase"></i> Consulting Services We Offer</h3>
-                    <ul class="service-features">
-                        <li><i class="fas fa-compass"></i> Technology Strategy Development</li>
-                        <li><i class="fas fa-sitemap"></i> IT Architecture Assessment & Design</li>
-                        <li><i class="fas fa-road"></i> Digital Transformation Roadmapping</li>
-                        <li><i class="fas fa-layer-group"></i> Technology Stack Evaluation</li>
-                        <li><i class="fas fa-chart-pie"></i> IT Cost Optimization</li>
-                        <li><i class="fas fa-handshake"></i> Vendor Selection & Management</li>
-                        <li><i class="fas fa-balance-scale"></i> IT Governance & Compliance</li>
-                        <li><i class="fas fa-search-dollar"></i> Technology Due Diligence</li>
+                    <h3 class="h2 fw-bold mb-3">Application Engineering</h3>
+                    <p class="lead mb-3">Custom software solutions built with modern technologies</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Web Applications</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Mobile Development</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>API Integration</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Legacy Modernization</li>
                     </ul>
-                    <h3><i class="fas fa-puzzle-piece"></i> Our Consulting Methodology</h3>
-                    <p>We take a collaborative approach, working closely with your team to understand your business challenges, goals, and constraints. We then develop actionable recommendations and implementation plans that deliver measurable results.</p>
+                    <a href="services/application-engineering.html" class="btn btn-primary me-3">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline-primary">Get Quote</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light rounded-4 p-5 text-center">
+                        <i class="fas fa-laptop-code fa-5x text-primary mb-3"></i>
+                        <h4>Modern Development</h4>
+                        <p class="mb-0">Agile development practices with cutting-edge technologies</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="support" class="service-detail">
-        <div class="container">
-            <div class="service-content">
-                <div class="service-text">
-                    <h2><i class="fas fa-cogs"></i> Managed IT Services</h2>
-                    <p>Our managed IT services provide comprehensive, proactive technology management to ensure your systems run smoothly, securely, and efficiently.</p>
-                    <div class="service-highlight-box">
-                        <div class="highlight-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="highlight-text">
-                            <span>Reduce downtime by up to 95% and ensure your business operations continue without interruption.</span>
-                        </div>
+            <!-- IT Consulting -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-headset fa-4x text-primary"></i>
                     </div>
-                    <h3><i class="fas fa-stream"></i> Managed Services Include</h3>
-                    <ul class="service-features">
-                        <li><i class="fas fa-eye"></i> 24/7 System Monitoring</li>
-                        <li><i class="fas fa-headset"></i> Help Desk Support</li>
-                        <li><i class="fas fa-network-wired"></i> Network Administration</li>
-                        <li><i class="fas fa-server"></i> Server Management</li>
-                        <li><i class="fas fa-database"></i> Data Backup & Recovery</li>
-                        <li><i class="fas fa-sync"></i> Patch Management</li>
-                        <li><i class="fas fa-tachometer-alt"></i> Performance Optimization</li>
-                        <li><i class="fas fa-tools"></i> Regular System Maintenance</li>
+                    <h3 class="h2 fw-bold mb-3">IT Consulting & Support</h3>
+                    <p class="lead mb-3">Strategic guidance and 24/7 technical support</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>IT Strategy Planning</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>24/7 Help Desk</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>System Maintenance</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Technology Roadmaps</li>
                     </ul>
-                    <h3><i class="fas fa-star"></i> Benefits of Our Managed Services</h3>
-                    <p>By partnering with Techmorphix Solutions for managed IT services, you'll minimize downtime, reduce operational costs, enhance security, and free your internal resources to focus on strategic initiatives rather than day-to-day technology management.</p>
+                    <a href="services/it-consulting.html" class="btn btn-primary me-3">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline-primary">Get Quote</a>
                 </div>
-                <div class="service-image">
-                    <i class="fas fa-headset service-icon"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="process">
-        <div class="container">
-            <h2 class="section-title">Our Service Delivery Process</h2>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h3>Discovery & Assessment</h3>
-                        <p>We thoroughly analyze your current systems, processes, and challenges to understand your unique needs.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-drafting-compass"></i>
-                        </div>
-                        <h3>Solution Design</h3>
-                        <p>Our experts develop a tailored strategy and technical solution aligned with your business objectives.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>Implementation</h3>
-                        <p>We execute the planned solution with minimal disruption to your operations.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-vial"></i>
-                        </div>
-                        <h3>Testing & Optimization</h3>
-                        <p>Rigorous testing ensures everything works as expected, with fine-tuning for optimal performance.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <h3>Training & Knowledge Transfer</h3>
-                        <p>We ensure your team is fully equipped to leverage the new solution effectively.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">6</div>
-                    <div class="step-content">
-                        <div class="step-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h3>Ongoing Support</h3>
-                        <p>We provide continued assistance, monitoring, and optimization to ensure long-term success.</p>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="bg-light rounded-4 p-5 text-center">
+                        <i class="fas fa-users-cog fa-5x text-primary mb-3"></i>
+                        <h4>Expert Consulting</h4>
+                        <p class="mb-0">Strategic IT guidance from experienced technology professionals</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-section">
+    <!-- Service Process -->
+    <section class="content-section">
         <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your IT Infrastructure?</h2>
-                <p>Schedule a consultation with our experts to discuss your specific needs and how our services can help you achieve your business goals.</p>
-                <a href="contact.html" class="btn btn-primary">Request a Consultation</a>
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold mb-3">Our Service Process</h2>
+                    <p class="lead">A proven methodology that ensures successful project delivery</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h5 class="fw-bold">Discovery</h5>
+                        <p>We analyze your current IT infrastructure and business requirements to understand your unique challenges.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h5 class="fw-bold">Strategy</h5>
+                        <p>Our experts develop a comprehensive technology strategy aligned with your business objectives.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h5 class="fw-bold">Implementation</h5>
+                        <p>We execute the solution using proven methodologies, ensuring minimal disruption to your operations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <h5 class="fw-bold">Optimization</h5>
+                        <p>Continuous monitoring and optimization ensure your systems perform at peak efficiency.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Industries We Serve -->
+    <section class="content-section">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Techmorphix Solutions</h3>
-                    <p>Delivering innovative technology solutions that drive business success since 2008.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-services">
-                    <h3>Our Services</h3>
-                    <ul>
-                        <li><a href="services.html#software">Custom Software Development</a></li>
-                        <li><a href="services.html#cloud">Cloud Solutions</a></li>
-                        <li><a href="services.html#security">Cybersecurity</a></li>
-                        <li><a href="services.html#consulting">IT Consulting</a></li>
-                        <li><a href="services.html#support">Managed IT Services</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 1234 Technology Parkway, Suite 500, San Francisco, CA 94105</li>
-                        <li><i class="fas fa-phone"></i> (415) 555-0123</li>
-                        <li><i class="fas fa-envelope"></i> info@techmorphixsolutions.com</li>
-                    </ul>
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold mb-3">Industries We Serve</h2>
+                    <p class="lead">Specialized solutions for diverse industry needs</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Techmorphix Solutions. All Rights Reserved.</p>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 ai-tech-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-university fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Financial Services</h5>
+                            <p>AI-powered fraud detection, algorithmic trading, and blockchain solutions for modern finance.</p>
+                            <div class="tech-badges mt-3">
+                                <span class="badge bg-primary me-1">Blockchain</span>
+                                <span class="badge bg-primary me-1">AI/ML</span>
+                                <span class="badge bg-primary">RegTech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 ai-tech-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-heartbeat fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Healthcare</h5>
+                            <p>AI diagnostics, telemedicine platforms, and HIPAA-compliant solutions for modern healthcare.</p>
+                            <div class="tech-badges mt-3">
+                                <span class="badge bg-success me-1">AI Diagnostics</span>
+                                <span class="badge bg-success me-1">IoMT</span>
+                                <span class="badge bg-success">FHIR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100 ai-tech-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-industry fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Manufacturing</h5>
+                            <p>Industry 4.0 solutions that optimize production and supply chain operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="content-section bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-6 fw-bold mb-3">Ready to Transform Your IT Infrastructure?</h2>
+                    <p class="lead mb-0">Get a free consultation and discover which services are right for your business.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg">Get Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Techmorphix Solutions</h5>
+                    <p>Leading IT consulting and technology services company with 15+ years of experience delivering innovative solutions.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services/cybersecurity.html" class="text-light text-decoration-none">Cybersecurity</a></li>
+                        <li><a href="services/cloud-infrastructure.html" class="text-light text-decoration-none">Cloud Infrastructure</a></li>
+                        <li><a href="services/application-engineering.html" class="text-light text-decoration-none">Application Development</a></li>
+                        <li><a href="services/it-consulting.html" class="text-light text-decoration-none">IT Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="case-studies.html" class="text-light text-decoration-none">Case Studies</a></li>
+                        <li><a href="testimonials.html" class="text-light text-decoration-none">Testimonials</a></li>
+                        <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@techmorphix.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>123 Tech Street, Silicon Valley, CA 94000</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Techmorphix Solutions. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+<!-- Technology Showcase -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold mb-3 gradient-text">Our Technology Expertise</h2>
+                <p class="lead">Comprehensive coverage of modern technologies and frameworks</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Frontend Technologies -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm tech-category-card">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h5 class="mb-0"><i class="fas fa-desktop me-2"></i>Frontend</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="tech-list">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Vue.js</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge">Nuxt.js</span>
+                                <span class="tech-badge">TypeScript</span>
+                                <span class="tech-badge">Tailwind CSS</span>
+                                <span class="tech-badge">Material-UI</span>
+                                <span class="tech-badge">Chakra UI</span>
+                                <span class="tech-badge">Three.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Technologies -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm tech-category-card">
+                        <div class="card-header bg-success text-white text-center">
+                            <h5 class="mb-0"><i class="fas fa-server me-2"></i>Backend</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="tech-list">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Python/Django</span>
+                                <span class="tech-badge">Python/FastAPI</span>
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">Java/Spring</span>
+                                <span class="tech-badge">Go</span>
+                                <span class="tech-badge">Ruby on Rails</span>
+                                <span class="tech-badge">PHP/Laravel</span>
+                                <span class="tech-badge">GraphQL</span>
+                                <span class="tech-badge">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Technologies -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm tech-category-card">
+                        <div class="card-header bg-warning text-white text-center">
+                            <h5 class="mb-0"><i class="fas fa-mobile-alt me-2"></i>Mobile</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="tech-list">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Swift/iOS</span>
+                                <span class="tech-badge">Kotlin/Android</span>
+                                <span class="tech-badge">Xamarin</span>
+                                <span class="tech-badge">Ionic</span>
+                                <span class="tech-badge">PWA</span>
+                                <span class="tech-badge">Expo</span>
+                                <span class="tech-badge">NativeScript</span>
+                                <span class="tech-badge">Cordova</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm tech-category-card">
+                        <div class="card-header bg-info text-white text-center">
+                            <h5 class="mb-0"><i class="fas fa-cloud me-2"></i>Cloud & DevOps</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="tech-list">
+                                <span class="tech-badge">AWS</span>
+                                <span class="tech-badge">Azure</span>
+                                <span class="tech-badge">Google Cloud</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">Kubernetes</span>
+                                <span class="tech-badge">Terraform</span>
+                                <span class="tech-badge">Jenkins</span>
+                                <span class="tech-badge">GitLab CI</span>
+                                <span class="tech-badge">GitHub Actions</span>
+                                <span class="tech-badge">Ansible</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm tech-category-card">
+                        <div class="card-header bg-danger text-white text-center">
+                            <h5 class="mb-0"><i class="fas fa-database me-2"></i>Databases</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="tech-list">
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">Redis</span>
+                                <span class="tech-badge">Elasticsearch</span>
+                                <span class="tech-badge">Cassandra</span>
+                                <span class="tech-badge">DynamoDB</span>
+                                <span class="tech-badge">Neo4j</span>
+                                <span class="tech-badge">InfluxDB</span>
+                                <span class="tech-badge">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML Technologies -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm tech-category-card">
+                        <div class="card-header bg-purple text-white text-center">
+                            <h5 class="mb-0"><i class="fas fa-brain me-2"></i>AI/ML</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="tech-list">
+                                <span class="tech-badge">TensorFlow</span>
+                                <span class="tech-badge">PyTorch</span>
+                                <span class="tech-badge">Scikit-learn</span>
+                                <span class="tech-badge">OpenCV</span>
+                                <span class="tech-badge">Hugging Face</span>
+                                <span class="tech-badge">LangChain</span>
+                                <span class="tech-badge">MLflow</span>
+                                <span class="tech-badge">Kubeflow</span>
+                                <span class="tech-badge">Apache Spark</span>
+                                <span class="tech-badge">Jupyter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blockchain & Web3 -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm tech-category-card">
+                        <div class="card-header bg-dark text-white text-center">
+                            <h5 class="mb-0"><i class="fas fa-link me-2"></i>Blockchain</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="tech-list">
+                                <span class="tech-badge">Ethereum</span>
+                                <span class="tech-badge">Solidity</span>
+                                <span class="tech-badge">Web3.js</span>
+                                <span class="tech-badge">Hardhat</span>
+                                <span class="tech-badge">Truffle</span>
+                                <span class="tech-badge">IPFS</span>
+                                <span class="tech-badge">Polygon</span>
+                                <span class="tech-badge">Hyperledger</span>
+                                <span class="tech-badge">Smart Contracts</span>
+                                <span class="tech-badge">DeFi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing & Quality -->
+                <div class="col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm tech-category-card">
+                        <div class="card-header bg-secondary text-white text-center">
+                            <h5 class="mb-0"><i class="fas fa-check-circle me-2"></i>Testing</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="tech-list">
+                                <span class="tech-badge">Jest</span>
+                                <span class="tech-badge">Cypress</span>
+                                <span class="tech-badge">Selenium</span>
+                                <span class="tech-badge">Playwright</span>
+                                <span class="tech-badge">Puppeteer</span>
+                                <span class="tech-badge">TestCafe</span>
+                                <span class="tech-badge">JUnit</span>
+                                <span class="tech-badge">PyTest</span>
+                                <span class="tech-badge">Postman</span>
+                                <span class="tech-badge">K6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+line_number="196"

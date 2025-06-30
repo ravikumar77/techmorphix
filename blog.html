@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Blog & Insights - Techmorphix Solutions</title>
+    <meta name="description" content="Stay updated with latest IT trends, cybersecurity insights, cloud best practices, and technology news from Techmorphix Solutions experts.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-code me-2"></i>Techmorphix Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="services/cybersecurity.html">Cybersecurity</a></li>
+                            <li><a class="dropdown-item" href="services/cloud-infrastructure.html">Cloud & Infrastructure</a></li>
+                            <li><a class="dropdown-item" href="services/application-engineering.html">Application Engineering</a></li>
+                            <li><a class="dropdown-item" href="services/it-consulting.html">IT Consulting & Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Blog</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 fw-bold mb-3">IT Insights & Blog</h1>
+                    <p class="lead">Stay ahead with the latest technology trends, best practices, and expert insights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search articles...">
+                        <button class="btn btn-outline-primary" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center text-lg-end">
+                        <button class="filter-btn active" data-filter="all">All Topics</button>
+                        <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+                        <button class="filter-btn" data-filter="cloud">Cloud</button>
+                        <button class="filter-btn" data-filter="development">Development</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop" alt="AI in Cybersecurity" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="badge bg-primary mb-3">Featured Article</div>
+                    <h2 class="display-6 fw-bold mb-3">The Future of AI in Cybersecurity: Trends for 2024</h2>
+                    <p class="lead mb-4">Explore how artificial intelligence is revolutionizing cybersecurity defense mechanisms and what businesses need to know about implementing AI-driven security solutions.</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" alt="Author" class="rounded-circle me-3" width="50" height="50">
+                        <div>
+                            <strong>Michael Rodriguez</strong><br>
+                            <small class="text-muted">Head of Cybersecurity • Dec 15, 2024</small>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Article 1 -->
+                <div class="col-lg-6 search-item filter-item" data-category="cloud">
+                    <div class="card blog-post border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&h=250&fit=crop" alt="Cloud Migration" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-info">Cloud Computing</span>
+                                <small class="text-muted">Dec 10, 2024</small>
+                            </div>
+                            <h5 class="fw-bold mb-3">5 Essential Steps for Successful Cloud Migration</h5>
+                            <p class="text-muted mb-3">A comprehensive guide to planning and executing your cloud migration strategy without disrupting business operations.</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b647?w=40&h=40&fit=crop&crop=face" alt="Sarah Chen" class="rounded-circle me-2" width="40" height="40">
+                                    <small>Sarah Chen</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="col-lg-6 search-item filter-item" data-category="cybersecurity">
+                    <div class="card blog-post border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&h=250&fit=crop" alt="Zero Trust Security" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-danger">Cybersecurity</span>
+                                <small class="text-muted">Dec 8, 2024</small>
+                            </div>
+                            <h5 class="fw-bold mb-3">Zero Trust Security: Why It's Critical for Modern Businesses</h5>
+                            <p class="text-muted mb-3">Understanding the zero trust security model and how to implement it effectively in your organization.</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Michael Rodriguez" class="rounded-circle me-2" width="40" height="40">
+                                    <small>Michael Rodriguez</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="col-lg-6 search-item filter-item" data-category="development">
+                    <div class="card blog-post border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=250&fit=crop" alt="DevOps Best Practices" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-success">Development</span>
+                                <small class="text-muted">Dec 5, 2024</small>
+                            </div>
+                            <h5 class="fw-bold mb-3">DevOps Best Practices for Enterprise Applications</h5>
+                            <p class="text-muted mb-3">Learn how to implement DevOps methodologies that accelerate development while maintaining security and quality.</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=40&h=40&fit=crop&crop=face" alt="John Anderson" class="rounded-circle me-2" width="40" height="40">
+                                    <small>John Anderson</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="col-lg-6 search-item filter-item" data-category="cloud">
+                    <div class="card blog-post border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=250&fit=crop" alt="Multi-Cloud Strategy" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-info">Cloud Computing</span>
+                                <small class="text-muted">Dec 3, 2024</small>
+                            </div>
+                            <h5 class="fw-bold mb-3">Multi-Cloud Strategy: Benefits and Implementation Guide</h5>
+                            <p class="text-muted mb-3">Discover the advantages of multi-cloud architecture and step-by-step guidance for implementation.</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=40&h=40&fit=crop&crop=face" alt="Emily Johnson" class="rounded-circle me-2" width="40" height="40">
+                                    <small>Emily Johnson</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="col-lg-6 search-item filter-item" data-category="cybersecurity">
+                    <div class="card blog-post border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1555949963-f15229508f2e?w=500&h=250&fit=crop" alt="Ransomware Protection" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-danger">Cybersecurity</span>
+                                <small class="text-muted">Nov 30, 2024</small>
+                            </div>
+                            <h5 class="fw-bold mb-3">Ransomware Protection: A Complete Defense Strategy</h5>
+                            <p class="text-muted mb-3">Essential tactics and technologies to protect your organization from ransomware attacks and data breaches.</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Michael Rodriguez" class="rounded-circle me-2" width="40" height="40">
+                                    <small>Michael Rodriguez</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="col-lg-6 search-item filter-item" data-category="development">
+                    <div class="card blog-post border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=500&h=250&fit=crop" alt="API Security" class="card-img-top">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-success">Development</span>
+                                <small class="text-muted">Nov 28, 2024</small>
+                            </div>
+                            <h5 class="fw-bold mb-3">API Security Best Practices for Enterprise Applications</h5>
+                            <p class="text-muted mb-3">Comprehensive guide to securing APIs, including authentication, authorization, and monitoring strategies.</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b647?w=40&h=40&fit=crop&crop=face" alt="Sarah Chen" class="rounded-circle me-2" width="40" height="40">
+                                    <small>Sarah Chen</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary btn-lg">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="fw-bold mb-3">Stay Updated</h2>
+                    <p class="lead mb-4">Subscribe to our newsletter for the latest IT insights, trends, and best practices delivered to your inbox.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Enter your email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Techmorphix Solutions</h5>
+                    <p>Leading IT consulting and technology services company with 15+ years of experience delivering innovative solutions.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services/cybersecurity.html" class="text-light text-decoration-none">Cybersecurity</a></li>
+                        <li><a href="services/cloud-infrastructure.html" class="text-light text-decoration-none">Cloud Infrastructure</a></li>
+                        <li><a href="services/application-engineering.html" class="text-light text-decoration-none">Application Development</a></li>
+                        <li><a href="services/it-consulting.html" class="text-light text-decoration-none">IT Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="case-studies.html" class="text-light text-decoration-none">Case Studies</a></li>
+                        <li><a href="testimonials.html" class="text-light text-decoration-none">Testimonials</a></li>
+                        <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@techmorphix.com</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>123 Tech Street, Silicon Valley, CA 94000</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Techmorphix Solutions. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
